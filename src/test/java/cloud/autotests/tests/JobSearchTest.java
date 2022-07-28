@@ -4,6 +4,7 @@ import cloud.autotests.helpers.DriverUtils;
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Description;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -14,6 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class JobSearchTest extends TestBase {
     @Test
+    @Tag("tests")
     @DisplayName("Test Website НОВЕО")
     void generatedTest() {
         step("Open https://xn--b1agwec.xn--p1ai/", () ->
@@ -33,6 +35,7 @@ public class JobSearchTest extends TestBase {
     }
 
     @Test
+    @Tag("tests")
     @DisplayName("Page title should have header text")
     void titleTest() {
         step("Open url 'https://xn--b1agwec.xn--p1ai/'", () ->
@@ -47,6 +50,7 @@ public class JobSearchTest extends TestBase {
     }
 
     @Test
+    @Tag("tests")
     @DisplayName("Page console log should not have errors")
     void consoleShouldNotHaveErrorsTest() {
         step("Open url 'https://xn--b1agwec.xn--p1ai/'", () ->
