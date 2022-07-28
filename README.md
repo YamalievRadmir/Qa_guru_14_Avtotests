@@ -1,44 +1,57 @@
-# Project in Allure TestOps with manual & automated tests
-<a target="_blank" href="https://allure.autotests.cloud/project/%s">allure.autotests.cloud/project/%s</a> (ask admin@qa.guru for access)
+Проект по автоматизации НОВЕО
 
-# Jenkins job
-<a target="_blank" href="https://jenkins.autotests.cloud/job/%s">jenkins.autotests.cloud/job/%s</a>
+Технологии и инструменты
+## :hotsprings: Технологии и инструменты
+<p align="center">
+<img width="6%" title="IntelliJ IDEA" src="images/icons/Intelij_IDEA.svg">
+<img width="6%" title="Java" src="images/icons/Java.svg">
+<img width="6%" title="Selenide" src="images/icons/Selenide.svg">
+<img width="6%" title="Selenoid" src="images/icons/Selenoid.svg">
+<img width="6%" title="Allure Report" src="images/icons/Allure_Report.svg">
+<img width="6%" title="Gradle" src="images/icons/Gradle.svg">
+<img width="6%" title="JUnit5" src="images/icons/JUnit5.svg">
+<img width="6%" title="GitHub" src="images/icons/Github.svg">
+<img width="6%" title="Jenkins" src="images/icons/Jenkins.svg">
+<img width="6%" title="Jira" src="images/icons/Jira.svg">
+<img width="6%" title="Docker" src="images/icons/Docker.svg">
+</p>
+
+## :hotsprings: Проверки
+Тест 1:
+- Открыть сайт НОВЕО.РФ
+- Нажать кнопку поиска
+- Ввести вакансию Тестировщик
+- Выбрать вакансию
+- Проверить корректность текста в шапке
+
+Тест 2:
+- Открыть сайт НОВЕО.РФ
+- Проверка названия в шапке сайта
+
+## :hotsprings: Jenkins job
+https://jenkins.autotests.cloud/job/Qa_guru_14_Avtotests/
+![](../../Desktop/Readme/Screenshot_2.png)
+![](../../Desktop/Readme/Screenshot_1.png)
+
+### Параметры сборки в Jenkins:
+Сборка в Jenkins
+
+- browser (браузер, default browser chrome)
+- size (размер окна браузера, default size 1920x1080)
+- threads (количество потоков)
 
 
-# USAGE examples
-
-### For run remote tests need fill remote.properties or to pass value:
-
-* browser (default chrome)
-* browserVersion (default 89.0)
-* browserSize (default 1920x1080)
-* browserMobileView (mobile device name, for example iPhone X)
-* remoteDriverUrl (url address from selenoid or grid)
-* videoStorage (url address where you should get video)
-* threads (number of threads)
-
-
-Run tests with filled remote.properties:
-```bash
+## :hotsprings: Запуск из терминала
+Локальный запуск:
+```
 gradle clean test
 ```
 
-Run tests with not filled remote.properties:
-```bash
-gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
+Удаленный запуск:
 ```
-
-Serve report:
-```bash
-allure serve build/allure-results
+clean
+test
+-Dbrowser=${BROWSER}
+-Dsize=${BROWSER_SIZE}
+-Dthreads=${THREADS}
 ```
-
-
-###### For further development there are some example tests in src/test/java/cloud.autotests/tests/demowebshop
-* remove @Disabled("...") annotation to run tests
-```bash
-gradle clean demowebshop
-```
-
-:heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
-:blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
