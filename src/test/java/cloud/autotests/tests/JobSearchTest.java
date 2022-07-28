@@ -15,7 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class JobSearchTest extends TestBase {
     @Test
-    @Tag("tests")
+    @Tag("test_noveo")
     @DisplayName("Test Website НОВЕО")
     void generatedTest() {
         step("Open https://xn--b1agwec.xn--p1ai/", () ->
@@ -35,7 +35,7 @@ public class JobSearchTest extends TestBase {
     }
 
     @Test
-    @Tag("tests")
+    @Tag("test_noveo")
     @DisplayName("Page title should have header text")
     void titleTest() {
         step("Open url 'https://xn--b1agwec.xn--p1ai/'", () ->
@@ -50,7 +50,7 @@ public class JobSearchTest extends TestBase {
     }
 
     @Test
-    @Tag("tests")
+    @Tag("test_noveo")
     @DisplayName("Page console log should not have errors")
     void consoleShouldNotHaveErrorsTest() {
         step("Open url 'https://xn--b1agwec.xn--p1ai/'", () ->
