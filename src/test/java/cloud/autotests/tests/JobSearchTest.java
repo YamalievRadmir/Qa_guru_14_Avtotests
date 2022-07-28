@@ -56,9 +56,9 @@ public class JobSearchTest extends TestBase {
         step("Open url 'https://xn--b1agwec.xn--p1ai/'", () ->
             open("https://xn--b1agwec.xn--p1ai/"));
 
-        step("Console logs should not contain text 'SEVERE'", () -> {
+        step("Console logs should not contain text 'НОВЕО'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
-            String errorText = "SEVERE";
+            String errorText = "НОВЕО";
 
             assertThat(consoleLogs).doesNotContain(errorText);
         });
