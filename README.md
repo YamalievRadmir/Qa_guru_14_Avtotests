@@ -30,8 +30,10 @@
 
 ## :hotsprings: Jenkins job
 https://jenkins.autotests.cloud/job/Qa_guru_14_Avtotests/
-![](../../Desktop/Readme/Screenshot_2.png)
-![](../../Desktop/Readme/Screenshot_1.png)
+### <img title="jenkins-job" src="images/Screenshots/Screenshot_2.png">
+<p align="center">
+<img title="jenkins-job" src="images/Screenshots/Screenshot_1.png">
+</p>
 
 ### Параметры сборки в Jenkins:
 Сборка в Jenkins
