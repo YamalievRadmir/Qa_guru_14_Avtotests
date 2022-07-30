@@ -29,9 +29,9 @@
 
 ## :hotsprings: Allure Report
 https://jenkins.autotests.cloud/job/Qa_guru_14_Avtotests/
-### <img title="jenkins-job" src="images/Screenshots/Screenshot_2.png">
+### <img title="jenkins-job" src="images/Screenshots/Screenshot_22.png">
 <p align="center">
-<img title="jenkins-job" src="images/Screenshots/Screenshot_1.png">
+<img title="jenkins-job" src="images/Screenshots/Screenshot_21.png">
 </p>
 
 ## :hotsprings: Сборка в Jenkins
