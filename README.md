@@ -3,7 +3,7 @@
 Технологии и инструменты
 ## :hotsprings: Технологии и инструменты
 <p align="center">
-<img width="6%" title="IntelliJ IDEA" src="https://mfs-03.getcourse.ru/public/files/159627/383/ccb79347a3ba4f05bfb3129dfd913fcf.svg?e=1659041999&s=cjWAy6g9FXeWMywTKl6cQw">
+<img width="6%" title="IntelliJ IDEA" src="https://fs.getcourse.ru/fileservice/file/download/a/159627/sc/383/h/ccb79347a3ba4f05bfb3129dfd913fcf.svg">
 <img width="6%" title="Java" src="https://fs.getcourse.ru/fileservice/file/download/a/159627/sc/56/h/07d564cc70e29ca3f184523294545f8b.svg">
 <img width="6%" title="Selenide" src="https://fs.getcourse.ru/fileservice/file/download/a/159627/sc/399/h/5d2c34e97efd8aff6f7f2c1d3c8c30b8.svg">
 <img width="6%" title="Selenoid" src="https://fs.getcourse.ru/fileservice/file/download/a/159627/sc/131/h/40ba0a9a145340d913192bff0f6c6b77.svg">
@@ -27,11 +27,17 @@
 - Открыть сайт НОВЕО.РФ
 - Проверка названия в шапке сайта
 
-## :hotsprings: Jenkins job
+## :hotsprings: Allure Report
 https://jenkins.autotests.cloud/job/Qa_guru_14_Avtotests/
 ### <img title="jenkins-job" src="images/Screenshots/Screenshot_2.png">
 <p align="center">
 <img title="jenkins-job" src="images/Screenshots/Screenshot_1.png">
+</p>
+
+## :hotsprings: Сборка в Jenkins
+### <a target="_blank" href="https://jenkins.autotests.cloud/job/Nikkitox-QAGuru-DomruTests/">Сборка в Jenkins</a>
+<p align="center">
+<img title="images/screenshots/jenkins-job.png" src="images/Screenshots/Screenshot_33.png">
 </p>
 
 ### Параметры сборки в Jenkins:
@@ -56,3 +62,13 @@ test
 -Dsize=${BROWSER_SIZE}
 -Dthreads=${THREADS}
 ```
+## :hotsprings: Отчет в Telegram
+<p align="center">
+<img title="Telegram notification message" src="images/Screenshots/Screenshot_4.png">
+</p>
+
+## :hotsprings: Примеры прохождения тестов
+- К каждому тесту в Allure Report прилагается видео. Пример ниже
+<p align="center">
+  <img title="Selenoid Video" src="images/Screenshots/Video1.gif">
+</p>
