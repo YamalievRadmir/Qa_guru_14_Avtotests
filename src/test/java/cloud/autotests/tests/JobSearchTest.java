@@ -13,8 +13,7 @@ import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-public class JobSearchTest {
-    //extends TestBase {
+public class JobSearchTest extends TestBase {
     @Test
     @Tag("test_noveo")
     @DisplayName("Test Website НОВЕО")
